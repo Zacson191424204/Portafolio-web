@@ -1,0 +1,54 @@
+/* styles.css */
+
+/* Variables de colores */
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #f8f9fa; /* Gris claro para fondo */
+    --text-color: #333;
+  }
+  
+  body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+  }
+  
+  .navbar {
+    background-color: var(--primary-color);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar-brand {
+    color: #fff;
+  }
+  
+  .nav-link {
+    color: #fff;
+    &:hover {
+      color: #dee2e6;
+    }
+  }
+  
+  .card {
+    background-color: #fff;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+  }
+  
+  /* Sección de proyectos */
+  .projects .card-img-top {
+    border-radius: 10px 10px 0 0;
+  }
+  
+  /* Sección de contacto */
+  #contact form {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
