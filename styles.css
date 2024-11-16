@@ -2,53 +2,76 @@
 
 /* Variables de colores */
 :root {
-    --primary-color: #007bff;
-    --secondary-color: #f8f9fa; /* Gris claro para fondo */
-    --text-color: #333;
-  }
-  
-  body {
-    font-family: 'Montserrat', sans-serif;
-    background-color: var(--secondary-color);
-    color: var(--text-color);
-  }
-  
-  .navbar {
-    background-color: var(--primary-color);
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  }
-  
-  .navbar-brand {
-    color: #fff;
-  }
-  
-  .nav-link {
-    color: #fff;
-    &:hover {
-      color: #dee2e6;
-    }
-  }
-  
-  .card {
-    background-color: #fff;
-    border: none;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  
-  .btn-primary {
-    background-color: var(--primary-color);
-    border-color: var(--primary-color);
-  }
-  
-  /* Sección de proyectos */
-  .projects .card-img-top {
-    border-radius: 10px 10px 0 0;
-  }
-  
-  /* Sección de contacto */
-  #contact form {
-    background-color: #fff;
-    padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
+  --primary-color: #007bff;
+  --secondary-color: #f8f9fa; /* Gris claro para fondo */
+  --text-color: #333;
+  --accent-color: #ff5722; /* Color de acento */
+  --background-color: #e9ecef; /* Fondo claro */
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: linear-gradient(135deg, #e9ecef, #ffffff); /* Gradiente suave */
+  color: var(--text-color);
+}
+
+/* Navbar */
+.navbar {
+  background-color: var(--primary-color);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+  color: #fff;
+  font-weight: bold;
+}
+
+.nav-link {
+  color: #fff;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: var(--accent-color);
+}
+
+/* Tarjetas de contenido */
+.card {
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out, box-shadow 0.3s;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Botones */
+.btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+/* Sección de proyectos */
+.projects .card-img-top {
+  border-radius: 10px 10px 0 0;
+}
+
+/* Sección de contacto */
+#contact form {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}

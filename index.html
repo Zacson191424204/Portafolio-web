@@ -9,68 +9,103 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container">
-          <a class="navbar-brand" href="#">Mi Portafolio</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#about">Sobre mí</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#projects">Proyectos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#contact">Contacto</a>
-              </li>
-            </ul>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Mi Portafolio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#about">Sobre mí</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Proyectos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <section id="about" class="py-5">
+    <div class="container text-center">
+      <h2 class="mb-4">Sobre mí</h2>
+      <p>Soy un desarrollador backend junior especializado en Python y Django. Me apasiona resolver problemas técnicos y construir aplicaciones robustas y escalables. Además, tengo conocimientos básicos de frontend con HTML, CSS, Javascript y Bootstrap.</p>
+    </div>
+  </section>
+  
+  <section id="projects" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Proyectos</h2>
+      <div class="row">
+        <!-- Proyecto 1 -->
+        <div class="col-md-4">
+          <div class="card">
+            <img src="ruta_a_tu_imagen_1.jpg" class="card-img-top" alt="Proyecto 1">
+            <div class="card-body">
+              <h5 class="card-title">Proyecto 1: Blog con Django</h5>
+              <p class="card-text">Aplicación web para gestionar publicaciones con CRUD completo. Utiliza Python, Django y Bootstrap.</p>
+              <a href="https://github.com/tu-repo/proyecto-1" class="btn btn-primary">Repositorio</a>
+              <a href="https://tu-demo.com" class="btn btn-secondary">Demo</a>
+            </div>
           </div>
         </div>
-      </nav>
-      <section id="about" class="py-5 text-center bg-light">
-        <div class="container">
-          <h2 class="mb-4">Sobre mí</h2>
-          <p>Soy un desarrollador backend especializado en Python y Django. Me encanta resolver problemas y construir aplicaciones eficientes.</p>
-        </div>
-      </section>
-      <section id="projects" class="py-5">
-        <div class="container">
-          <h2 class="text-center mb-4">Proyectos</h2>
-          <div class="row">
-            <div class="col-md-4">
-              <div class="card">
-                <img src="ruta-de-tu-imagen.jpg" class="card-img-top" alt="Proyecto 1">
-                <div class="card-body">
-                  <h5 class="card-title">Proyecto 1</h5>
-                  <p class="card-text">Descripción breve del proyecto.</p>
-                  <a href="#" class="btn btn-primary">Ver proyecto</a>
-                </div>
-              </div>
+        <!-- Proyecto 2 -->
+        <div class="col-md-4">
+          <div class="card">
+            <img src="ruta_a_tu_imagen_2.jpg" class="card-img-top" alt="Proyecto 2">
+            <div class="card-body">
+              <h5 class="card-title">Proyecto 2: Aplicación de videos</h5>
+              <p class="card-text">Aplicación para gestionar una lista de videos con Django y despliegue en PythonAnywhere.</p>
+              <a href="https://github.com/tu-repo/proyecto-2" class="btn btn-primary">Repositorio</a>
+              <a href="https://tu-demo.com" class="btn btn-secondary">Demo</a>
             </div>
-            <!-- Repite el bloque de tarjeta para cada proyecto -->
           </div>
         </div>
-      </section>
-      <section id="contact" class="py-5 text-center">
-        <div class="container">
-          <h2 class="mb-4">Contacto</h2>
-          <form>
-            <div class="mb-3">
-              <input type="text" class="form-control" placeholder="Nombre" required>
+        <!-- Proyecto 3 -->
+        <div class="col-md-4">
+          <div class="card">
+            <img src="ruta_a_tu_imagen_3.jpg" class="card-img-top" alt="Proyecto 3">
+            <div class="card-body">
+              <h5 class="card-title">Proyecto 3: Sistema Machine Learning</h5>
+              <p class="card-text">Un chatbot básico con Machine Learning desplegado en AWS.</p>
+              <a href="https://github.com/tu-repo/proyecto-3" class="btn btn-primary">Repositorio</a>
+              <a href="https://tu-demo.com" class="btn btn-secondary">Demo</a>
             </div>
-            <div class="mb-3">
-              <input type="email" class="form-control" placeholder="Email" required>
-            </div>
-            <div class="mb-3">
-              <textarea class="form-control" rows="4" placeholder="Mensaje"></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary">Enviar</button>
-          </form>
+          </div>
         </div>
-      </section>
+      </div>
+    </div>
+  </section>
+  
+  <section id="contact" class="py-5">
+    <div class="container text-center">
+      <h2 class="mb-4">Contacto</h2>
+      <p>¿Tienes algún proyecto en mente? ¡Contáctame!</p>
+      <ul class="list-inline">
+        <li class="list-inline-item">
+          <a href="mailto:tu-email@gmail.com" class="btn btn-outline-dark">
+            <i class="bi bi-envelope"></i> Correo
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a href="https://www.linkedin.com/in/tu-perfil" class="btn btn-outline-dark">
+            <i class="bi bi-linkedin"></i> LinkedIn
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a href="https://github.com/tu-usuario" class="btn btn-outline-dark">
+            <i class="bi bi-github"></i> GitHub
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+  
                         
 </body>
 </html>
